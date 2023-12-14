@@ -1,0 +1,164 @@
+[gd_scene load_steps=11 format=3 uid="uid://blgyvdj3n3y85"]
+
+[ext_resource type="Texture2D" uid="uid://bql5o4ah1o6se" path="res://assets/sprites/battle_assets/Forest.png" id="1_twthb"]
+[ext_resource type="Texture2D" uid="uid://x6wxcs2x11un" path="res://assets/sprites/ui/Background UI.png" id="2_gcwtu"]
+[ext_resource type="Texture2D" uid="uid://cl6o18dh3qbyr" path="res://assets/sprites/monsters/monster test/test 2.png" id="3_tdo3c"]
+[ext_resource type="Texture2D" uid="uid://d1tgtavqpuv10" path="res://assets/sprites/monsters/monster test/test 1.png" id="4_poile"]
+
+[sub_resource type="Animation" id="Animation_iqvlx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(93, 78)]
+}
+
+[sub_resource type="Animation" id="Animation_nj54g"]
+resource_name = "battle_entry_party_003"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(79, 78), Vector2(79, 78), Vector2(79, 78.5), Vector2(79, 78), Vector2(79, 78.5), Vector2(79, 78), Vector2(79, 78.5), Vector2(79, 78), Vector2(79, 78.5), Vector2(79, 78)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q0ner"]
+_data = {
+"RESET": SubResource("Animation_iqvlx"),
+"battle_entry_party_003": SubResource("Animation_nj54g")
+}
+
+[sub_resource type="Animation" id="Animation_gbg11"]
+resource_name = "battle_animation_enemy_003"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(240, 30), Vector2(240, 30), Vector2(240, 31), Vector2(240, 30), Vector2(240, 31), Vector2(240, 30), Vector2(240, 31), Vector2(240, 30), Vector2(240, 31), Vector2(240, 30)]
+}
+
+[sub_resource type="Animation" id="Animation_yyuyc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(240, 30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g5w7j"]
+_data = {
+"RESET": SubResource("Animation_yyuyc"),
+"battle_animation_enemy_003": SubResource("Animation_gbg11")
+}
+
+[node name="Battle Scene" type="Node2D"]
+position = Vector2(14, 17)
+
+[node name="Battle Background" type="Sprite2D" parent="."]
+position = Vector2(146, 50)
+scale = Vector2(1, 0.992647)
+texture = ExtResource("1_twthb")
+
+[node name="Battle UI" type="Sprite2D" parent="."]
+position = Vector2(-14, -20)
+scale = Vector2(1.00312, 1.01111)
+texture = ExtResource("2_gcwtu")
+centered = false
+
+[node name="Party" type="Sprite2D" parent="."]
+position = Vector2(93, 78)
+texture = ExtResource("3_tdo3c")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Party"]
+libraries = {
+"": SubResource("AnimationLibrary_q0ner")
+}
+autoplay = "battle_entry_party_003"
+
+[node name="Wild Battle" type="Sprite2D" parent="."]
+position = Vector2(240, 30)
+texture = ExtResource("4_poile")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Wild Battle"]
+libraries = {
+"": SubResource("AnimationLibrary_g5w7j")
+}
+autoplay = "battle_animation_enemy_003"
